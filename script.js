@@ -175,3 +175,74 @@ btnRestart.addEventListener('click', function(){
 
 
 
+
+const timer = document.querySelector('.header__timer-extra')
+
+let i = timer.innerHTML
+function lvl (){
+
+    
+    if(i < 50)
+    {i++
+        timer.innerHTML = i
+    } 
+
+    setTimeout(lvl, 10)
+}
+lvl()
+
+function lvll (){
+    if(i >= 50 && i < 80){
+        i++
+        timer.innerHTML = i
+    }
+    setTimeout(lvll, 100)
+}
+lvll()
+
+function lvlll (){
+    if(i >= 80 && i < 100){
+        i++
+        timer.innerHTML = i
+    }
+    setTimeout(lvlll, 1000)
+}
+lvlll()
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let i = timer.innerHTML
+// if(i = '0')
+// setTimeout(() => lvl(i), 10)
+// else if(i = '49')
+// setTimeout(() => lvl(i), 10000)
+
+// function lvl(i){
+//     if (i < 50)
+//     {i++
+//         timer.innerHTML = i
+        
+//     }
+//     else if(i> 50  )
+//     i++
+//     setTimeout(() => lvl(i), 100)
+// } 
+
+
+
+// function lvl50(y){
+//     if (y >= 49 )
+//     {y++
+//     timer.innerHTML = y}
+//     setTimeout(() => lvl50(y), 1000)
+// } 
